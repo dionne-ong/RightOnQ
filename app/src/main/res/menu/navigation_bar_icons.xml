@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:id="@+id/group0" android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_allposts"
+            android:icon="@drawable/ic_home_black_24px"
+            android:title="Home" />
+    </group>
+    <group android:id="@+id/group1" android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_posts"
+            android:icon="@drawable/ic_account_box_black_24dp"
+            android:title="My Profile" />
+
+        <item
+            android:id="@+id/nav_messages"
+            android:icon="@drawable/ic_email_black_24dp"
+            android:title="Messages" />
+
+    </group>
+
+    <group android:id="@+id/group2">
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@drawable/ic_exit_to_app_black_24px"
+            android:title="Logout" />
+    </group>
+
+</menu>
