@@ -1,6 +1,9 @@
 <resources>
     <string name="app_name">Right On Q</string>
 
+    <!-- tokens -->
+    <string name="token_mapbox">pk.eyJ1IjoiZGlvbm5lLW9uZyIsImEiOiJjamRhM2M5OTUzcWszMzNxZnp1cHdlcnY5In0.cxXGQlu5_HlRYbqZrMldaQ</string>
+
     <!-- Strings related to login -->
     <string name="prompt_name"> Full Name </string>
     <string name="prompt_email">Email</string>
