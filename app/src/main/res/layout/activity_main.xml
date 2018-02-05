@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="edu.v1.inovate.rightonq_v1.MainActivity"
+    android:padding="20dp"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+    <ImageView
+        android:id="@+id/img_logo"
+        android:layout_width="175dp"
+        android:layout_height="175dp"
+        app:srcCompat="@mipmap/q_logo"
+        android:layout_centerInParent="true"
+        android:contentDescription="@string/placeholder_logo"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingTop="10dp">
+    <EditText
+        android:id="@+id/editText_email"
+        android:layout_width="348dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        android:hint= "@string/prompt_email"
+        tools:layout_editor_absoluteX="18dp"
+        tools:layout_editor_absoluteY="154dp" />
+
+    <EditText
+        android:id="@+id/editText_password"
+        android:layout_width="346dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:hint= "@string/prompt_password"
+        app:layout_constraintTop_toBottomOf="@+id/editText"
+        tools:layout_editor_absoluteX="19dp" />
+
+        <Button
+            android:id="@+id/btn_signin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/action_sign_in" />
+
+        <Button
+            android:id="@+id/btn_toregister"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/action_register"
+            android:background="@color/transparent"
+            android:textColor="#80b3ff"/>
+    </LinearLayout>
+</LinearLayout>
