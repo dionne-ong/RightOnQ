@@ -19,4 +19,17 @@
         completions."
     </string>
     <string name="placeholder_logo">placeholder logo</string>
+
+    <string name="prompt_title"> Job Title </string>
+    <string name="prompt_price"> Price </string>
+    <string name="prompt_location"> Location </string>
+    <string name="prompt_description"> Job Description </string>
+    <string name="prompt_type"> Location </string>
+    <string name="prompt_category"> Categories </string>
+
+    <string-array name="category_arrays">
+        <item>Reservation</item>
+        <item>Appointment</item>
+        <item>Others</item>
+    </string-array>
 </resources>
