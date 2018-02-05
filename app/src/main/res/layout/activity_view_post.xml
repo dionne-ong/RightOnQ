@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="edu.v1.inovate.rightonq_v1.ViewPostActivity">
+
+
+    <LinearLayout
+        android:id="@+id/editcontent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_weight="1.1"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/prompt_title"
+                android:layout_marginTop="30dp"
+                android:padding="7dp"
+                android:src="@drawable/ic_work_black_24dp"
+                android:tint="@color/textSecondaryColor" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_content_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/prompt_title"/>
+
+                <TextView
+                    android:id="@+id/tv_content_location"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/prompt_description"/>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/prompt_location"
+                android:padding="7dp"
+                android:src="@drawable/ic_pin_drop_black_24px"
+                android:tint="@color/textSecondaryColor" />
+
+            <TextView
+
+                android:id="@+id/tv_content_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/prompt_location" />
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/prompt_price"
+                android:padding="7dp"
+                android:src="@drawable/ic_attach_money_black_24dp"
+                android:tint="@color/textSecondaryColor" />
+
+            <TextView
+                android:id="@+id/tv_content_num"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/prompt_price"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".3">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/text_category"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/prompt_category"
+                android:padding="7dp"
+                android:src="@drawable/ic_storage_black_24dp"
+                android:tint="@color/textSecondaryColor" />
+
+            <TextView
+                android:id="@+id/tv_content_category"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/placeholder_category"/>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/b_accept"
+            android:text="@string/prompt_accept_listing"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="@color/colorPrimary"
+            android:textColor="@color/textMainColor" />
+
+        <Button style="@style/Widget.AppCompat.Button.Borderless.Colored"
+            android:id="@+id/b_cancel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/prompt_cancel"
+            android:padding="0dp"
+            android:layout_margin="0dp"
+            />
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

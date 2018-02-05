@@ -1,9 +1,14 @@
 package edu.v1.inovate.rightonq_v1;
 
+import android.content.Intent;
+import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
 import com.mapbox.mapboxsdk.Mapbox;
+import com.mapbox.mapboxsdk.annotations.Icon;
+import com.mapbox.mapboxsdk.annotations.IconFactory;
+import com.mapbox.mapboxsdk.annotations.Marker;
 import com.mapbox.mapboxsdk.annotations.MarkerOptions;
 import com.mapbox.mapboxsdk.camera.CameraPosition;
 import com.mapbox.mapboxsdk.geometry.LatLng;
@@ -37,12 +42,23 @@ public class MapboxActivity extends AppCompatActivity {
                         .build(); // Builds the CameraPosition object from the builder
 
                 mapboxMap.setCameraPosition(position);
+
                 mapboxMap.addMarker(new MarkerOptions()
                         .position(new LatLng(-33.8500000, 18.4158234))
                         .title("JOB_MAKER - TIME - JOBTITLE")
                         .snippet("JEB DESCRIPTION HERE")
-                        //.icon(icon)
+//                        .icon(icon)
                         );
+
+                mapboxMap.setOnInfoWindowClickListener(new MapboxMap.OnInfoWindowClickListener() {
+                    @Override
+                    public boolean onInfoWindowClick(@NonNull Marker marker) {
+                        Intent i = new Intent(MapboxActivity.this, ViewPostActivity.class);
+                        startActivity(i);
+                        return false;
+                    }
+                });
+
             }
         });
     }
@@ -88,5 +104,4 @@ public class MapboxActivity extends AppCompatActivity {
         super.onSaveInstanceState(outState);
         mapView.onSaveInstanceState(outState);
     }
-
 }

@@ -29,6 +29,10 @@
     <string name="prompt_description"> Job Description </string>
     <string name="prompt_type"> Location </string>
     <string name="prompt_category"> Categories </string>
+    <string name="prompt_accept_listing">Accept Listing</string>
+    <string name="prompt_cancel">Cancel</string>
+    <string name="placeholder_category"><![CDATA[<Insert Category>]]></string>
+    <string name="text_category">Category:</string>
 
     <string-array name="category_arrays">
         <item>Reservation</item>

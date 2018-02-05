@@ -28,6 +28,7 @@ dependencies {
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
 
     implementation 'com.mapbox.mapboxsdk:mapbox-android-sdk:5.3.2'
+    implementation 'com.mapbox.mapboxsdk:mapbox-android-plugin-geojson:0.1.0'
 
     compile 'com.synnapps:carouselview:0.0.10'
     compile 'com.diegodobelo.expandingview:expanding-view:0.9.4'
